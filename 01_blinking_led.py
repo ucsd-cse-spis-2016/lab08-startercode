@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+!/usr/bin/env python
 # Import the relevant libraries
 import RPi.GPIO as GPIO
 import time
@@ -12,8 +12,8 @@ def setup():
 	GPIO.output(LedPin, GPIO.HIGH) # Set LedPin high(+3.3V) to off led
 
 def loop():
-        ''' This code repeats forever'''
 	while True:
+                # This code repeats forever
 		print '...led on'
 		GPIO.output(LedPin, GPIO.LOW)  # led on
 		time.sleep(0.5)
